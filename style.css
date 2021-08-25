@@ -169,7 +169,7 @@ figcaption {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.d-bloc .panel icon {
+.d-bloc .panel .icon {
   border-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -299,7 +299,7 @@ figcaption {
 
 .nav > li a:hover, .nav > li a:focus {
   background-color: transparent;
-  color: #f3976c !important;
+  color: #F3976C !important;
   border-radius: 40px;
 }
 
@@ -491,9 +491,11 @@ input, textarea {
 }
 
 .form-control {
+  display: flex;
+  width: 100%;
+  min-height: 30px;
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
-  min-height: 30px;
 }
 
 .scrollToTop {
@@ -625,7 +627,7 @@ a[data-lightbox]:hover img {
 h1, h2, h3, h4, h5, h6, p, label, .btn, a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #111111 !important;
+  color: #111 !important;
   text-decoration: none;
 }
 
@@ -667,7 +669,7 @@ p {
 
 .cta-hero {
   margin-top: 22px;
-  color: #FFFFFF !important;
+  color: #FFF !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
   font-size: 16px;
@@ -686,8 +688,8 @@ h2 {
 
 h3 {
   font-size: 15px;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
   color: #333333 !important;
 }
 
@@ -697,12 +699,8 @@ h3 {
   box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-  color: #333333 !important;
-}
-
-h4 {
-  color: #333333 !important;
+h1, h4 {
+  color: #333 !important;
 }
 
 .icons {
@@ -711,16 +709,16 @@ h4 {
 }
 
 .white {
-  color: #FFFFFF !important;
+  color: #FFF !important;
 }
 
 .white2 {
   padding: 5px 10px;
-  color: #111010 !important;
+  color: #111 !important;
 }
 
 .white2:hover {
-  color: #FFFFFF !important;
+  color: #FFF !important;
 }
 
 .portfolio-thumb {
@@ -750,7 +748,7 @@ h4 {
 }
 
 .bgc-white {
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .bgc-dark-slate-blue {
@@ -772,15 +770,15 @@ h4 {
 
 .btn-atomic-tangerine:hover {
   background: #ff5100 !important;
-  color: #000000 !important;
+  color: #000 !important;
 }
 
 .ltc-white {
-  color: #FFFFFF !important;
+  color: #FFF !important;
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #ccc !important;
 }
 
 .ltc-atomic-tangerine {
@@ -952,7 +950,7 @@ h4 {
 
   .navbar-brand img {
     max-height: 40px;
-    width: 215px;
+    width: auto;
   }
 
   .nav-invert .navbar-header {

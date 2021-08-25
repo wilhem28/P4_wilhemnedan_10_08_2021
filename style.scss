@@ -1,7 +1,8 @@
+@import 'utils/variables';
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: $secondaryBackgroundColor;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -255,7 +256,7 @@ figcaption {
     color: rgba(0, 0, 0, .7);
 }
 
-.d-bloc .panel icon {
+.d-bloc .panel .icon {
     border-color: rgba(0, 0, 0, .7);
 }
 
@@ -385,7 +386,7 @@ figcaption {
 
 .nav > li a:hover,.nav > li a:focus {
     background-color: transparent;
-    color: #f3976c!important;
+    color: $primaryColor!important;
     border-radius: 40px;
 }
 
@@ -502,7 +503,7 @@ nav .caret {
 }
 
 .btn-d,.btn-d:hover,.btn-d:focus {
-    color: #FFF;
+    color: $secondaryColor;
     background: rgba(0, 0, 0, .3);
 }
 
@@ -570,9 +571,12 @@ input, textarea {
     display: flex;
 }
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    display: flex;
+    width: 100%;
     min-height: 30px;
+
+    border-color: rgba(0, 0, 0, .1);
+    box-shadow: none; 
 }
 
 .scrollToTop {
@@ -610,7 +614,7 @@ a[data-lightbox]:hover::before {
     margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
-    color: #FFF;
+    color: $secondaryColor;
     font-weight: 100;
     z-index: 1;
     position: absolute;
@@ -643,7 +647,7 @@ a[data-lightbox]:hover img {
 
 .lightbox-caption {
     padding: 20px;
-    color: #FFF;
+    color: $secondaryColor;
     background-color: rgba(0, 0, 0, .5);
     position: absolute;
     left: 15px;
@@ -652,7 +656,7 @@ a[data-lightbox]:hover img {
 }
 
 .close-lightbox {
-    color: #FFF;
+    color: $secondaryColor;
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -667,7 +671,7 @@ a[data-lightbox]:hover img {
 
 .close-lightbox:hover,.next-lightbox:hover,.prev-lightbox:hover {
     opacity: 1.0;
-    color: #FFF;
+    color: $secondaryColor;
 }
 
 .next-lightbox,.prev-lightbox {
@@ -706,7 +710,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
         family: "helvetica";
         weight: 400;
     }
-    color: #111111!important;
+    color: $primaryColorFont!important;
     text-decoration: none;
 }
 
@@ -748,7 +752,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: $secondaryColor!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -772,9 +776,12 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font: {
+        size:15px;
+        weight: 700;
+    }
+
     text-transform: uppercase;
-    font-weight: 700;
     color: #333333!important;
 }
 
@@ -784,13 +791,13 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
+h1, h4 {
+    color: #333!important;
 }
 
-h4 {
-    color: #333333!important;
-}
+// h4 {
+//     color: #333!important;
+// }
 
 .icons {
     margin-bottom: 14px;
@@ -798,16 +805,16 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: $secondaryColor!important;
 }
 
 .white2 {
     padding: 5px 10px;
-    color: #111010!important;
+    color: $primaryColorFont!important;
 }
 
 .white2:hover {
-    color: #FFFFFF!important;
+    color: $secondaryColor!important;
 }
 
 .portfolio-thumb {
@@ -830,14 +837,16 @@ h4 {
 }
 
 .bold-link {
-    font-size: 14px;
-    font-weight: 900;
+    font: {
+        size: 14px;
+        weight: 900;
+    }
     text-decoration: underline!important;
     cursor: pointer;
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: $secondaryBackgroundColor;
 }
 
 .bgc-dark-slate-blue {
@@ -845,33 +854,33 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: $primaryBackgroundColor;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: $primaryColor!important;
 }
 
 .btn-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: $primaryBackgroundColor;
     color: #252222!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #ff5100!important;
-    color: #000000!important;
+    background: $primaryBackgroundColorHover!important;
+    color: #000!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: $secondaryColor!important;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #ccc!important;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: $primaryColor!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -1024,7 +1033,7 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: 215px;
+        width: auto;
     }
     .nav-invert .navbar-header {
         float: none;
