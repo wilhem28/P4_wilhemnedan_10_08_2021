@@ -7,18 +7,20 @@
     <meta name="description" content="La chouette agence est une agence web à Lyon, au coeur du dynamisme des entreprises lyonnaises souhaitant rayonner, par le biais sur leur site web existant ou à élaborer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>La chouette agence Accueil</title>
-    <link rel="shortcut icon" type="image/jpg" href="./img/logo/favicon.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="img/logo/favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="preload" href="img/la-chouette-agence-banniere.jpg">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
-	<script src="./js/jquery-2.1.0.js" defer></script>
-	<script src="./js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.min.js" defer></script>
-	<script src="./js/jquery.touchSwipe.min.js" defer></script>
-	<script src="./js/gmaps.min.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/et-line.min.css">
+
+	<script type="text/javascript" rel="preload" src="js/jquery-2.1.0.js" defer></script>
+	<script type="text/javascript" rel="preload" src="js/bootstrap.min.js" defer></script>
+	<script type="text/javascript" rel="preload" src="js/blocs.min.js" defer></script>
+	<script type="text/javascript" rel="preload" src="js/jquery.touchSwipe.min.js" defer></script>
+	<script type="text/javascript" rel="preload" src="js/gmaps.min.js" defer></script>
 <!-- Analytics END -->
     
 </head>
@@ -58,7 +60,11 @@
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo/logo.png" class="center-block image-resize-mode" alt="La chouette agence à Lyon"/>
+				<picture>
+  					<source media="(min-width: 1024px)" srcset="img/logo/logo-la-chouette-agence-200.png">
+  					<source media="(max-width: 375px)" srcset="img/logo/logo-la-chouette-agence-100.png">
+  					<img src="img/logo/logo-la-chouette-agence-150.png" class="center-block" alt="La chouette agence à Lyon"/>
+				</picture>
 				<h1 class="text-center hero-bloc-text tc-white">La chouette agence</h1>
 				<div class="text-center">
 					<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
@@ -121,9 +127,7 @@
 			<div class="col-sm-12">
 				<h2 class="mg-md text-justify tc-white">Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients.<br></h2>
 				<p class="text-justify white">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.<br><br>
-					<a class="ltc-white bold-link" href="page2.html">
-						<p class="text-center white">Contactez notre équipe</p>
-					</a><br>
+				<a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a><br>
 				</p>
 			</div>
 		</div>
@@ -207,40 +211,40 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">La chouette agence - Agence web basée à Lyon<br></p>
+				<p class="text-center white2">La chouette agence - Agence web basée à Lyon<br></p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html">
+							<a class="social" href="index.html" aria-label="Twitter">
 								<span class="fa fa-twitter icon-md"></span>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html">
+							<a class="social" href="index.html" aria-label="Facebook">
 								<span class="fa fa-facebook icon-md"></span>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html">
+							<a class="social" href="index.html" aria-label="Dribble">
 								<span class="fa fa-dribbble icon-md"></span>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html">
+							<a class="social" href="index.html" aria-label="Instagram">
 								<span class="fa fa-instagram icon-md"></span>
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
-						<p class="text-center white">PARTENAIRES</p>
+					<div class="col-sm-3">
+						<p class="text-center white2">PARTENAIRES</p>
 						<ul>
 							<li><a class="white2" href="#">voiture.com</a></li>
 							<li><a class="white2" href="#">pizza.com</a></li>

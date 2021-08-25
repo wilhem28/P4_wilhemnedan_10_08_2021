@@ -706,7 +706,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
         family: "helvetica";
         weight: 400;
     }
-    color: #575757!important;
+    color: #111111!important;
     text-decoration: none;
 }
 
@@ -755,11 +755,15 @@ p {
     font-weight: 700;
 }
 
+// .facebook, .instagram, .dribble, .twitter {
+//     display: flex;
+//     justify-content: space-around;
+//     margin: 5px auto 20px auto;
+// }
+
 .social {
-    display: flex;
-    justify-content: space-around;
     max-width: 400px;
-    margin: 5px auto 20px auto;
+    margin: auto auto auto auto;
 }
 
 h2 {
@@ -799,7 +803,7 @@ h4 {
 
 .white2 {
     padding: 5px 10px;
-    color: rgba(255, 255, 255, 0.6)!important;
+    color: #111010!important;
 }
 
 .white2:hover {
@@ -849,13 +853,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C!important;
-    color: #FFFFFF!important;
+    background-color: #F3976C;
+    color: #252222!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #ff5100!important;
+    color: #000000!important;
 }
 
 .ltc-white {
