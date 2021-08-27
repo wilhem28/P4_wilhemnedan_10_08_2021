@@ -95,7 +95,7 @@ figcaption {
 }
 
 .texture-paper::after {
-  background: url("img/texture-paper.png") 280px 280px;
+  background: url("../img/texture-paper.png") 280px 280px;
 }
 
 .b-parallax {
@@ -795,19 +795,19 @@ h1, h4 {
 }
 
 .bg-dots-bg {
-  background-image: url("img/dots-bg.png");
+  background-image: url("../img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-  background-image: url("img/lines-h2-bg.png");
+  background-image: url("../img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-  background-image: url("img/la-chouette-agence-banniere.jpg");
+  background-image: url("../img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.jpg");
+  background-image: url("../img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -830,12 +830,12 @@ h1, h4 {
     max-width: 100%;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -855,8 +855,8 @@ h1, h4 {
   }
 
   .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .bloc-group, .bloc-group .bloc {
@@ -866,8 +866,6 @@ h1, h4 {
 
   .bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 @media (max-width: 767px) {
