@@ -558,7 +558,8 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
-  max-height: 90vh;
+  width: 100%;
+  height: 90vh;
   margin: 0 auto;
 }
 
@@ -720,6 +721,8 @@ h1, h4 {
 }
 
 .portfolio-thumb {
+  width: 270px;
+  height: 270px;
   margin-bottom: 24px;
 }
 
@@ -1027,5 +1030,11 @@ h1, h4 {
 @media (max-width: 767px) {
   .bloc-mob-center-text {
     text-align: center;
+  }
+
+  .portfolio-thumb {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

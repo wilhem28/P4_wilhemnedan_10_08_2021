@@ -739,8 +739,10 @@ h1, h4 {
 }
 
 .portfolio-thumb {
+    width: 270px;
+    height: 270px;
     margin-bottom: 24px;
-}
+}//rajout
 
 .portfolio-row {
     margin-bottom: 44px;
@@ -1023,4 +1025,9 @@ h1, h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+    .portfolio-thumb {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 24px;
+    } // rajout
 }
