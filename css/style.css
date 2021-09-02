@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a, button {
@@ -491,8 +492,10 @@ input, textarea {
 .form-control {
   display: flex;
   width: 100%;
-  min-height: 30px;
-  border-color: rgba(0, 0, 0, 0.1);
+  min-height: 35px;
+  color: #000000;
+  border-color: black;
+  background-color: #f9d3c0;
   box-shadow: none;
 }
 
