@@ -1593,8 +1593,8 @@ tbody.collapse.in {
 }
 .center-block {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-right: auto;
     margin-left: auto;
 }
